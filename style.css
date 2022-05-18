@@ -1,0 +1,281 @@
+/*.........index  page...........*/
+*{
+	margin:0px;
+	padding:0px;
+    box-sizing: border-box;	
+}
+.bgimage{
+	background-image: url('background\ new.jpg');
+	background-size: 100% 110%;
+	width: 100%;
+	height: 100vh;
+}
+.Rimage{
+	background-image: url('R.jpg');
+	background-size: 100% 110%;
+	width: 100%;
+	height: 100vh;
+}
+.menu{
+
+	width: 100%;
+	height: 100px;
+	background-color: white;
+}
+.leftmenu{
+	width: 20%;
+	line-height: 100px;
+	float:left;
+}
+
+.leftmenu h4{
+	padding-left: 70px;
+	font-weight: bold;
+	color: rgb(235, 64, 78);
+	font-size: 45px;
+	font-family: 'Brush Script MT',cursive;
+}
+.rightmenu{
+	width:70%;
+	height: 100px;
+	float:right;
+	cursor: pointer;
+}
+
+.rightmenu ul{
+	margin-left: 200px;	
+}
+
+.rightmenu ul li {
+	font-family: 'Montserrat', sans-serif;
+	display: inline-block;
+	list-style: none;
+	font-size: 15px;
+	color:crimson;
+	
+	font-weight: bold;
+	line-height: 100px;
+	margin-left: 40px;
+	text-transform: uppercase;
+}
+.rightmenu ul li:hover{
+	color: rgb(231, 228, 17);
+}
+.text{
+	width: 100%;
+	margin-top: 200px;
+	text-transform: uppercase;
+	text-align: center;
+	color:rgb(48, 79, 236);
+	
+}
+.text h1{
+	font-size:62px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700px;
+	margin:14px 0px;
+	text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+	animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+	0%,80% {
+	  transform: rotateY(360deg) 
+	}
+  }
+.text h3{
+	font-size: 30px;
+	font-family: 'Open Sans', sans-serif;
+	color: rgb(10, 28, 111);
+	
+}
+
+/* ..........menu page.........*/
+.secondpage
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    
+	height: 100px;
+
+	
+}
+.heading2 h2{
+	color:rgb(159, 46, 46);
+	font-size: 30px;
+}
+.container
+{
+	
+    position: relative;
+    width:2000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 10px;
+    padding: 10px;
+	cursor: pointer;	
+}
+.heading2{
+	text-align: center;
+	padding:60px;	
+}
+.container .card
+{
+    width: 100%;
+    background: #fff;
+}
+.container .card .imgBx
+{
+    position:relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;	
+}
+.container .card .imgBx img
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    transition: 0.5s ease-in-out;
+    transform-origin:center;
+}
+.container .card:hover .imgBx img
+{
+    transform: scale(1.5);
+}
+
+
+.ThirdPage{
+	text-align: center;
+}
+/*...............locations page...........*/
+.ThirdPage{
+	width:100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;	
+}
+.ThirdPage h1{
+	font-size: 50px;
+	color: rgb(10, 13, 19);	
+}
+.ThirdPage h3{
+	color:#801010;
+	font-size: 30px;
+}
+.column {
+	float: left;
+	width: 100%;
+	margin-bottom: 50px;
+	padding: 0 8px;
+	margin-left: 10px;	
+}
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: 8px;
+}  
+.container {
+	padding: 0 120px;
+}  
+.container::after, .row::after {
+	content: "";
+	clear: both;
+	display: table;
+	box-sizing: border-box;
+	box-sizing: inherit;
+  } 
+.button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px ;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;	
+} 
+.button:hover {
+	background-color: #555;
+  }
+  
+/*........about us ..............*/
+.aboutus{
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+	margin-top: 50px;
+	height: 100px;
+}
+.aboutus h1{
+	text-align: center;
+	font-size: 60px;
+	font-family: sans-serif;
+	color: #801010;
+}
+.aboutus h2{
+	text-align: center;
+	font-size: 30px;
+}
+.aboutus p{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 20px;
+	font-family: sans-serif ;
+	font-style: oblique;
+}
+/* feedback.............*/
+#feedback{
+	color:white; 
+	width:80%;
+	margin:auto;
+	font-family: sans-serif;
+}
+.header{
+  margin: 10px 5px 0px 0px;
+  text-align:center;
+  font-size: 20px;
+}
+#survey-form{
+ 
+   text-align:left;
+   border: 2px solid rgb(169, 183, 185);
+   border-radius: 4px;
+   margin: 5px 400px 5px 400px;
+   padding: 15px 35px 60px 35px;
+}
+input[type="text"],input[type="email"],input[type="number"]{
+  width:100%;
+  height:40px;
+  border: 1px solid rgb(22, 21, 21);
+  border-radius: 4px;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+  }
+
+.form-group{
+  margin-top:5px;
+  margin-bottom:5px;
+}
+#submit{
+  width:100%;
+  height:40px;
+  background-color:rgb(65, 213, 211);
+  cursor: pointer;
+  
+}
+#submit:hover {
+	background-color: rgb(146, 230, 230);
+  }
+  
